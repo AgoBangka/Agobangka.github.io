@@ -34,7 +34,7 @@ section{
     background-color: rgba(225, 51, 153, .05);
 }
 .heading span{
-    color: var(--orange)
+    color: #ff6a00
 }
 
 .btn{
@@ -49,9 +49,12 @@ section{
 }
 
 .btn:hover{
-    background: var(--orange);   
+    background: #ff6a00;   
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
-
+ 
 
 /* sampe sini */
 header{
@@ -70,9 +73,10 @@ header{
 header .logo{
     font-size: 3rem;
     color: #333
+
 }
 header .logo span{
-    color: van(--orange);
+    color: #ff6a00
 
 }
 header .navbar a{
@@ -81,15 +85,15 @@ header .navbar a{
     color: #666;
 }
 header .navbar a:hover{
-    color: var(--orange);
+    color: #000000
 }
 header .icons a{
     font-size: 2.5rem;
     color: #333;
     margin-left: 1.5rem;
 }
-header .navbar a:hover{
-    color: var(--orange);
+header .icons a:hover{
+    color: #ff6a00;
 }
 
 header #toggler{
@@ -118,7 +122,7 @@ header .fa-bars{
 }
 .home .content h3{
     font-size: 6rem;
-    color: #333;
+    color: #000000;
 }
 
 .home .content span{
@@ -130,7 +134,7 @@ header .fa-bars{
 
 .home .content p{
     font-size: 1.5rem;
-    color: #999;
+    color: #000000;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -158,31 +162,18 @@ header .fa-bars{
     object-fit: cover;
 }
 
-.about .row .video-container h3{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3rem;
-    color: #333;
-    background: #fff;
-    width: 100%;
-    padding: 1rem 2rem;
-    text-align: center;
-    mix-blend-mode: screen;
-}
-
 .about .row .content{
     flex: 1 1 40rem;
 }
 
 .about .row .content h3{
     font-size: 3rem;
-    color: #333;
+    color: #000000;
 }
 
 .about .row .content p{
     font-size: 1.5rem;
-    color: #999;
+    color: #000000;
     padding: 5rem 0;
     padding-top: 1rem;
     line-height: 1.5rem;
@@ -199,8 +190,192 @@ header .fa-bars{
 
 .icons-container .icons{
     background-color: #fff;
-    border: 1rem solid rgba(0, 0, 0, .1)
+    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
 }
+
+/* sampe sini menit ke 20 */
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+
+.icons-container .icons h3{
+    color: #ff6a00;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+/* ini product */
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    border: .2rem solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.products .box-container .box .classdiscount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: #000000;
+    background-color: #acacac;
+    z-index: 1;
+    border-radius: 5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top:.1 rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(0.95);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    top: rem;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.2rem;
+    width: 50%;
+    background: #ff6a00;
+    color: #fff;
+}
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #a8a8a8;
+    border-right: .1rem solid #a8a8a8;
+    width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background: #8f8f8f;
+    color: #eee;
+}
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: #ff6a00;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999
+}
+
+/* review */
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 1rem solid rgba(0, 0, 0, .1);
+}
+
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
+
+.review .box-container .box .stars i{
+    color: #ff6a00;
+    font-size: 2rem;
+}
+
+.review .box-container .box .p{
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+    font-size: 1.5rem;
+    color: #999;
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -231,6 +406,7 @@ header .fa-bars{
 
 
 /* media queries */
+
 @media (max-width: 991px){
 
     html{
@@ -245,13 +421,17 @@ header .fa-bars{
     }
     
     .home{
-        background-position: left;
+        background-position: right;
     }
 }
 
-@media (max-widht:768px){
-    header .fa-bars{
+@media (max-width: 768px){
+
+    /* ini bermasalah menu ikon nya sengg kagak muncul ini woy */
+    header .fa-bars {
         display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     header .navbar{
@@ -262,10 +442,12 @@ header .fa-bars{
         background: #eee;
         border-top: 1rem solid rgba(0, 0, 0, .1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.3s ease;
     }
 
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0% 100%);
+    #toggler:checked ~ .navbar{
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     header .navbar a{
@@ -283,6 +465,15 @@ header .fa-bars{
     .home .content span{
         font-size: 2.5rem;
     }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+        color: #666;
+    }
+
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 450px){
@@ -290,7 +481,6 @@ header .fa-bars{
     html{
         font-size: 50%;
     }
-
     .heading{
     font-size: 3rem;
 }
