@@ -322,10 +322,10 @@ header .fa-bars{
 .review .box-container .box{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: 5rem;
+    border-radius: 2rem;
     padding: 3rem 2rem;
     position: relative;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    border: .6rem solid rgba(255, 144, 41, 0.63)
 }
 
 .review .box-container .box .fa-quote-right{
@@ -333,19 +333,25 @@ header .fa-bars{
     bottom: 3rem;
     right: 3rem;
     font-size: 6rem;
-    color: #eee;
+    color: #b1b1b146;
 }
 
 .review .box-container .box .stars i{
-    color: #ff6a00;
-    font-size: 2rem;
+    color: #ffa600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .review .box-container .box .p{
     color: #999;
     font-size: 1.5rem;
     line-height: 1.5;
-    padding-top: 2rem;
+    padding-top: 3rem;
+}
+
+.review .box-container .box .user span{
+    font-size: 1.1rem;
+    color: #ff0000;
 }
 
 .review .box-container .box .user{
@@ -364,7 +370,7 @@ header .fa-bars{
 
 .review .box-container .box .user h3{
     font-size: 1.5rem;
-    color: #999;
+    color: #000000;
 }
 
 .contact .row{
@@ -381,6 +387,16 @@ header .fa-bars{
     border: 1rem solid rgba(0, 0, 0, 0.1);
     background: #fff;
     border-radius: .5rem;
+    background-repeat: repeat-y;
+
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
 
 }
 
@@ -391,7 +407,7 @@ header .fa-bars{
     text-transform: none;
     border: .1rem solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
-    margin: 7rem 0;
+    margin: .8rem 0;
     width: 100%;
 }
 
@@ -417,7 +433,7 @@ header .fa-bars{
 
 .footer .box-container .box h3{
     color: #333;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
 }
 
@@ -426,11 +442,13 @@ header .fa-bars{
     color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
+    text-align: right;
 }
 
 .footer .box-container .box a:hover{
     color: #ff6a00;
     text-decoration: underline;
+    font-size: 1.6rem;
 }
 
 .footer .box-container .box img{
@@ -438,17 +456,21 @@ header .fa-bars{
 }
 
 .footer .credit{
-    text-align: center;
+
     padding: 1.5rem;
     margin-top: 1.5rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #333;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
     border-top: 1rem solid rgba(0, 0, 0, .1);
+    text-align: center;
+    background-color: #333;
+    width: 100%;
 }
 
 .footer .credit span{
     color: #ff6a00;
+    text-align: center;
 }
 
 
@@ -465,7 +487,7 @@ header .fa-bars{
 
 
 
-
+/* tambahkan gambar di contact usnya */
 
 
 
@@ -485,11 +507,12 @@ header .fa-bars{
 
 /* media queries */
 
-@media (max-width: 991px){
 
+@media (max-width: 991px) {
     html{
-        font-size: 55%;
+    font-size: 55%;
     }
+
     header{
         padding: 2rem;
     }
@@ -499,42 +522,40 @@ header .fa-bars{
     }
     
     .home{
-        background-position: right;
+        background-position: center;
     }
 }
 
-@media (max-width: 768px){
-
-    /* ini bermasalah menu ikon nya sengg kagak muncul ini woy */
-    header .fa-bars {
+    @media (max-width: 768px){
+    header .fa-bars{
         display: block;
-        font-size: 24px;
-        cursor: pointer;
     }
 
     header .navbar{
         position: absolute;
+        width: 240px;
         top: 100%;
         left: 0;
         right: 0;
-        background: #eee;
-        border-top: 1rem solid rgba(0, 0, 0, .1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path 0.3s ease;
+        background: rgba(255, 255, 255, 0.774);
+        height: 100vh;
+        clip-path: polygon(0 0,100% 0, 0 0);
     }
 
-    #toggler:checked ~ .navbar{
-        display: block;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
     }
-
     header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: .1rem solid rgba(0, 0, 0, .1);
+        margin: 1rem;
+        padding: 1rem;
+        color: #fff;
+        background: #ff8e3d;
+        border: .5rem solid rgba(29, 14, 3, 0.1);
         display: block;
-    }   
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 2rem;
+    }
 
     .home .content h3{
         font-size: 5rem;
@@ -544,22 +565,18 @@ header .fa-bars{
         font-size: 2.5rem;
     }
 
-    .icons-container .icons h3{
-        font-size: 2rem;
-        color: #666;
-    }
 
-    .icons-container .icons span{
-        font-size: 1.7rem;
-    }
+
+
 }
 
-@media (max-width: 450px){
-
-    html{
+    @media (max-width: 450px) {
+        html{
         font-size: 50%;
-    }
-    .heading{
-    font-size: 3rem;
-}
+        }
+    
+        header{
+            padding: 2rem;
+        }
+
 }
