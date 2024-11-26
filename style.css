@@ -481,6 +481,7 @@ header .fa-bars{
     margin: 0;
 }
 
+/* car shopping */
 
 
 
@@ -516,7 +517,7 @@ header .fa-bars{
 
 @media (max-width: 991px) {
     html{
-    font-size: 55%;
+    font-size: 55%; 
     }
 
     header{
