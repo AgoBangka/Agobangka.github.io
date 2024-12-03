@@ -179,6 +179,8 @@ header .fa-bars{
     line-height: 1.5rem;
 }
 
+/* icons */
+
 .icons-container{
     background-color: #eee;
     display: flex;
@@ -195,20 +197,21 @@ header .fa-bars{
     display: flex;
     align-items: center;
     flex: 1 1 25rem;
+    cursor: pointer;
 }
 
-/* sampe sini menit ke 20 */
 
 .icons-container .icons img{
     height: 5rem;
     margin-right: 2rem;
 }
-
+.icons-container .icons a{
+    color: #ff6a00;
+}
 
 .icons-container .icons h3{
-    color: #ff6a00;
     padding-bottom: 2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 
 }
 .icons-container .icons span{
@@ -216,6 +219,19 @@ header .fa-bars{
     font-size: 1.5rem;
 }
 
+.btn-satu{
+    display: inline-block;
+    background: #ffffff;
+    color: #492d2d;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn-satu:hover{
+    color: #080606;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
 /* ini product */
 
 .products .box-container{
