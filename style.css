@@ -254,8 +254,9 @@ header .fa-bars{
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: #000000;
-    background-color: #acacac;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ffa600;
     z-index: 1;
     border-radius: 5rem;
 }
